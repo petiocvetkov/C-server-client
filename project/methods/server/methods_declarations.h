@@ -1,0 +1,15 @@
+Node* loadDate();
+Message addElement(Node* list, Person* value );
+Message removePerson(Node* list, char* egn);
+Node* isExist(Node* list, char* egn);
+void printAll(Node* list);
+void handleEvent(int socketFd, Node* list, Event event);
+void handleConnection(Node* list, int socketFd);
+Person* eventToPerson(Event event);
+void addElementToFile(Person* person);
+Event* personToEvent(Person* person);
+void getAll(Node* list, int socketFd);
+void saveListToFile(Node* list);
+void deleteElementAndSave(Node* list, Node* target);
+Message removePatient(Node* list, Person* person);
+void * socketThread(void *arg);
